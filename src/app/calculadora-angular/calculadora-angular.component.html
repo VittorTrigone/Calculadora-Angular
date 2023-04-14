@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Víttor Trigone Dias</h1>
+  </nav>
+  <h1 class="titulo">Calculadora</h1>
+  <div class="container">
+    <div class="box">
+      <form style="display: flex; flex-direction: column; align-items: center;">
+        <input class="caixa-de-texto" id="num1" type="text">
+        <br>
+        <input class="caixa-de-texto" id="num2" type="text">
+        <br>
+        <div>
+          <button type="button" (click)="contas('+')"><i class="bi bi-plus"></i></button>
+          <button type="button" (click)="contas('-')"><i class="bi bi-dash"></i></button>
+          <button type="button" (click)="contas('/')"><i class="bi bi-divide"></i></button>
+          <button type="button" (click)="contas('*')"><i class="bi bi-x"></i></button>
+        </div>
+        <br>
+        <input class="caixa-de-texto-off" id="conta" type="text" disabled>
+      </form>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/f55ca80b44.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
